@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../logo.svg";
 
-function MainContent() {
+function MainContent(props) {
+  const className = props.darkMode ? "dark" : "";
   return (
-    <main className="main">
+    <main className={`main ${className}`}>
       <img src={logo} className="bg-logo" alt="" />
       <div className="main-content">
         <h1 className="h1">Fun Facts about React</h1>
